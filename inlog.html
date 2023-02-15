@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulier</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+      Inloggen
+    </div>
+    <form class="form" name="agendaFormulier" method="post" action="inlogVerwerk.php">
+        <div class="input_field">
+            <label>Gebruiker</label>
+            <input type="text" name="username" class="input" placeholder="Gebruiker" required>
+        </div>
+        <div class="input_field">
+            <label>Wachtwoord</label>
+            <input type="password" name="password" class="input" placeholder="Wachtwoord" required>
+        </div>
+        <div class="inputfield">
+            <input type="submit" name="verzend" value="Login" class="btn">
+        </div>
+    </form>
+</div>
+</body>
+</html>

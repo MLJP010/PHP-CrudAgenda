@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulier</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+      Agenda Form
+    </div>
+    <form class="form" name="agendaFormulier" method="post" action="toevoegVerwerk.php">
+        <div class="input_field">
+            <label>Onderwerp</label>
+            <input type="text" name="onderwerp" class="input" placeholder="onderwerp" required>
+        </div>
+        <div class="input_field">
+            <label>Inhoud</label>
+            <input type="textarea" name="inhoud" class="input" placeholder="inhoud" required>
+        </div>
+        <div class="input_field">
+            <label>Begindatum</label>
+            <input type="date" name="datumB" class="input" required>
+        </div>
+        <div class="input_field">
+            <label>Einddatum</label>
+            <input type="date" name="datumE" class="input" required>
+        </div>
+        <div class="input_field">
+            <label>Prioriteit</label>
+            <select class="input" name="prioriteit">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input_field">
+            <label>Status</label>
+            <select class="input" name="status">
+                <option value="n" selected>Niet begonnen</option>
+                <option value="b">Bezig</option>
+                <option value="a">Afgerond</option>
+            </select>
+        </div>
+        <div class="inputfield">
+            <input type="submit" name="verzend" value="Voeg toe aan agenda" class="btn">
+        </div>
+    </form>
+    <br>
+    <a href='inlog.html'>Inloggen</a>
+</div>
+
+</body>
+</html>
